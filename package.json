@@ -5,6 +5,11 @@
   "repository": "https://github.com/claudealdric/static-testing-tools.git",
   "author": "claudealdric <cvaldric@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "prettier": "prettier --ignore-path .gitignore \"**/*.{ts,json}\"",
+    "format": "yarn prettier --write",
+    "format:check": "yarn prettier --check"
+  },
   "devDependencies": {
     "prettier": "^2.3.2"
   }
